@@ -3,6 +3,7 @@
 $(document).ready(function(){
 	$('.slide').prepend('<div class="patternOverlay"></div>');	
 	
+
 	$('.skillbar').each(function(){
 		$(this).find('.skillbar-bar').animate({
 			width:$(this).attr('data-percent')
@@ -146,6 +147,26 @@ $(window).load(function(){
 	}
   });
 });
+
+//typing js
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Passionately experienced in building products, platforms for mobile and web.')
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString('Software Developer')
+    .pauseFor(2500)
+    .deleteChars(9)
+    .typeString('<strong>Engineer</strong>')
+    .pauseFor(2500)
+    .deleteChars(8)
+    .typeString('<strong>Programmer</strong>')
+    .pauseFor(2500)
+    .start();
 
 
 // we worked slider
