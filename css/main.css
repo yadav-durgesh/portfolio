@@ -250,14 +250,10 @@ header{
 }
 .logo{
 	float:left;
-	background:url(../images/logo-2.png) no-repeat 0 0;
 	width:123px;
 	height:80px;
 	font-size:0;
 	line-height:0;
-}
-.isStuck .logo{
-	background:url(../images/logo.png) no-repeat 0 0;
 }
 .navwrapper .container{
 	padding:0;
@@ -870,7 +866,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 ------------------------------------------------------*/
 
 .contact{
-	background:#f8f8f8;
+	background:#ffffff;
 }
 .contact .container{
 	padding-top:75px;
@@ -1095,7 +1091,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#cabcbc; /* change if the mask should have another color then white */
+	background-color:#f1efef; /* change if the mask should have another color then white */
 	z-index:9999999999; /* makes sure it stays on top */
 }
 

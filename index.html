@@ -4,6 +4,7 @@
 <!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
 <!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
 <head>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -26,6 +27,22 @@
 <!-- font icon css style-->
 <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
+<style type="text/css">
+  .image-anim:hover {
+    animation: shake 0.99s;
+    animation-iteration-count: infinite;
+  }
+  .work-media:hover {
+    background: linear-gradient(#f1efef,#ffffff);
+  }
+  .degree-media:hover{
+    background: linear-gradient(#eae7e7,#f8f8f8);
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(1deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+</style>
 <body onLoad="load()" onUnload="GUnload()">
 <!-- Preloader -->
 <div id="preloader">
@@ -44,20 +61,21 @@
           <div class="navwrapper">
             <div class="navbar navbar-inverse navbar-static-top">
               <div class="container">
-                <!--<div class="logo">logo</div> -->
+                <div class="logo"><img src="images/logo1.png" style="max-width:80%;" /></div> 
                 <div class="navArea"><a href="#" class="closeMenu"><i class="fa fa-times"></i></a>
                     <div class="navbar-header">
                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                      <!-- <a class="navbar-brand" href="#">Menu</a>  --></div>
                     <div class="navbar-collapse collapse">
+                     <!--  <img src="images/logo1.png" style="height: 100px"> -->
                       <ul class="nav navbar-nav">
                         <li class="menuItem active"><a href="#wrapper">Home</a></li>
                         <li class="menuItem"><a href="#aboutus">About Me</a></li>
                         <li class="menuItem"><a href="#skillset">Skills</a></li>
                         <li class="menuItem"><a href="#experience">Experience</a></li>
                         <li class="menuItem"><a href="#education">Education</a></li>
-                        <li class="menuItem"><a href="#ourwork">Portfolio</a></li>
                         <li class="menuItem"><a href="#contact">Contact</a></li>
+                        <li class=""><a href="/portfolio">Portfolio</a></li>
                       </ul>
                     </div>
                 </div>
@@ -102,7 +120,7 @@
       </div> 
        </div> 
       <div class="row">
-      <div class=" col-lg-3 col-md-3 col-sm-3 col-xs-12 pull-right media"><img src="images/logo1.png" alt=""></div>
+      <div class=" col-lg-3 col-md-3 col-sm-3 col-xs-12 pull-right media"><img class="image-anim" src="images/logo1.png" alt=""></div>
         <div class=" col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left media">
           <h4>Er. Durgesh Yadav</h4>
             <p><em>Software Developer<em> with 3+ years of experience with focus on backend and frontend development seeking a full time role in <em>Mumbai<em>. Proven hands-on experience designing and implementing scalable solutions using wide range of technologies with a history of productivity and successful outcomes. </p>
@@ -138,48 +156,113 @@
             </div>
             <div class="col-md-12">
               <div class="col-md-6 col-sm-12 media">
-                  <p>As a result oriented IT Professional in development and implementation of web application using <i>PHP, Python, HTML, CSS, JAVASCRIPT and MYSQL </i> technology, and also having good work experience in the following technologies
+                  <p style="line-height: 20px;">As a result oriented IT Professional in development and implementation of web application using <i>PHP, Python, HTML, CSS, JAVASCRIPT and MYSQL </i> technology, and also having good work experience in the following technologies
                     <ul>
-                      <li>Expertise in implementing web technologies using FrameWork <i>Opencart, Laravel, Codeigniter, AngularJs, React, Django</i> to develop Enterprise software applications.</li>
-                      <li>Good knowledge in <i>MYSQL, MS-SQL</i></li>
-                      <li>Expertise in Development, Modification and Implementation Mobile App with <i>Angularjs</i> (PWA), <i>React-Native</i></li>
-                      <li>Payment Gateways:<i> PayTM, HDFC, Razor Pay, PayU, Stripe</i></li>
-                      <li>Hosting <i> AWS, Digital Ocean, Ngnix</i></li>
-                      <li>Others <i> GIT, Gooday, BugTracker, JIRA, Slack, Postman, AWS-ec2</i> </li>
+                      <li style="padding-bottom: 5px;">Expertise in implementing web technologies using FrameWork <i>Opencart, Laravel, Codeigniter, AngularJs, React, Django</i> to develop Enterprise software applications.</li>
+                      <li style="padding-bottom: 5px;">Good knowledge in <i>MYSQL, MS-SQL</i></li>
+                      <li style="padding-bottom: 5px;">Expertise in Development, Modification and Implementation Mobile App with <i>Angularjs</i> (PWA), <i>React-Native</i></li>
+                      <li style="padding-bottom: 5px;">Hosting <i> AWS, Digital Ocean, Ngnix</i></li>
+                      <li style="padding-bottom: 5px;">Others <i> GIT, Gooday, BugTracker, JIRA, Slack, Postman, AWS-ec2</i> </li>
                     </ul>
                 </div>
-              <div class="col-md-6 col-sm-12">
+              <div class="col-md-6 col-sm-12" style="padding-top: 25px">
                 
-                <div class="skillbar clearfix " data-percent="41%">
-                    <div class="skillbar-title"><span>HTML / CSS</span></div>
+                <div class="skillbar clearfix " data-percent="65%">
+                    <div class="skillbar-title"><span>HTML/CSS</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent"></div>
                 </div> <!-- End Skill Bar -->
                 
-                <div class="skillbar clearfix " data-percent="52%">
+                <div class="skillbar clearfix " data-percent="70%">
                     <div class="skillbar-title"><span>php</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent"></div>
                 </div> <!-- End Skill Bar -->    
 
-                <div class="skillbar clearfix " data-percent="52%">
+                <div class="skillbar clearfix " data-percent="40%">
                     <div class="skillbar-title"><span>Python</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent"></div>
                 </div> <!-- End Skill Bar -->  
 
-                <div class="skillbar clearfix " data-percent="52%">
+                <div class="skillbar clearfix " data-percent="65%">
                     <div class="skillbar-title"><span>Javascript</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent"></div>
                 </div> <!-- End Skill Bar -->  
-                <div class="skillbar clearfix " data-percent="52%">
+                <div class="skillbar clearfix " data-percent="65%">
                     <div class="skillbar-title"><span>SQL</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent"></div>
                 </div> <!-- End Skill Bar -->           
                 </div>
-            </div>
+                <div class="col-md-12">
+                   <div class="heading" style="padding-bottom: 0px">
+                    <h2>Other Skills</h2>
+                    <h3></h3>        
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <label class="col-md-12">Leadership</label>                 
+                  <div class="progress-circle over50 p70">
+                     <span>70%</span>
+                     <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                     </div>
+                  </div>
+                </div>
+                <div class="col-md-2"> 
+                  <label class="col-md-12">Creativity</label>                  
+                  <div class="progress-circle over50 p65">
+                     <span>65%</span>
+                     <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                     </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <label class="col-md-12">Management</label>               
+                  <div class="progress-circle over50 p65">
+                     <span>65%</span>
+                     <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                     </div>
+                  </div> 
+                </div>
+                <div class="col-md-2">
+                  <label class="col-md-12">Troubleshooting</label>             
+                  <div class="progress-circle over50 p75">
+                     <span>75%</span>
+                     <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                     </div>
+                  </div> 
+                </div>
+                <div class="col-md-2">    
+                  <label class="col-md-12">Learning</label>              
+                  <div class="progress-circle over50 p80">
+                     <span>80%</span>
+                     <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                     </div>
+                  </div> 
+                </div>
+                <div class="col-md-2">
+                  <label class="col-md-12">Motivation</label>       
+                  <div class="progress-circle over50 p100">
+                     <span>100%</span>
+                     <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                     </div>
+                  </div>                  
+                </div>
+                </div>
         </div>
     </div>
   </section>
@@ -192,7 +275,7 @@
         <h3>My previous associations</h3>        
       </div>
         
-        <div class="row media">
+        <div class="row media work-media">
           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
               <div class="expertiesico">
                   Mar,2017<br>Till Date
@@ -201,12 +284,11 @@
           <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
               <h4>Aavidcode & Tacto</h4>
                 <h5>Software Developer</h5>
-                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
-duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
-lum sapien sed matti sapien sed mattis.</p>
+                <p><b>Aavidcode:</b> Here I had an opportunity to work along with some skilled developers and learn a lot from them about team work and software development process and also got opportunity to become Project Lead. In Nov 2017 got merged with Tacto</p>
+                <p><b>Tacto:</b> Here I had an opportunity to work on different latest technology and also enhance my Troubleshooting and Management quality.</p>
             </div>
         </div>
-        <div class="row media">
+        <div class="row media work-media">
           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
               <div class="expertiesico">
                   Dec,2015<br>Dec 2016
@@ -215,9 +297,7 @@ lum sapien sed matti sapien sed mattis.</p>
           <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
               <h4>G4K Solutions</h4>
                 <h5>Software Developer</h5>
-                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
-duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
-lum sapien sed matti sapien sed mattis.</p>
+                <p>The starting point of my programming career. It included, Software as a Service(SaaS) based model built on OpenCart framework and also other minor projects involved in core PHP and basic HTML5, CSS3 and JS/JQuery, Mysql.</p>
             </div>
         </div>
     </div>
@@ -231,146 +311,81 @@ lum sapien sed matti sapien sed mattis.</p>
         <h3>Degrees &amp; Certification </h3>        
       </div>
         
-        <div class="row media">
+        <div class="row media degree-media">
           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
               <div class="expertiesico">
-                  Mar,2011<br>January 2011
+                  2015 <br> (Mira Road, Thane)
                 </div>
             </div>
           <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-              <h4>Master Degree of Design</h4>
-                <h5>University of Design</h5>
-                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
-duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
-lum sapien sed matti sapien sed mattis.</p>
+              <h4>Bachelor of Engineering in Information Technology </h4>
+                <h5>Mumbai University</h5>
+                <b>Shree L.R. Tiwari College of Engineering</b> In which my skill were more sharpend.
             </div>
         </div>
-        <div class="row media">
+        <div class="row media degree-media">
           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
               <div class="expertiesico">
-                  Mar,2011<br>January 2011
+                  2011 <br> (Bandra, Mumbai)
                 </div>
             </div>
           <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-              <h4>Bachelor of Arts</h4>
-                <h5>University of Design</h5>
-                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
-duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
-lum sapien sed matti sapien sed mattis.</p>
+              <h4>HIGHER SECONDARY CERTIFICATE</h4>
+                <h5>Maharashtra State Board</h5>
+                <p><b>Fr. Agnel Junior College</b> In addition to academic, I had an exposure to education, sports and cultural activities which help me to build overall personality. </p>
             </div>
         </div>
-        <div class="row media">
+        <div class="row media degree-media">
           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
               <div class="expertiesico">
-                  Mar,2011<br>January 2011
+                  2009 <br> (Bandra, Mumbai)
                 </div>
             </div>
           <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-              <h4>Master Degree of Design</h4>
-                <h5>Senior UX Designer</h5>
-                <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg
-duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu
-lum sapien sed matti sapien sed mattis.</p>
+              <h4>Secondary School Certificate </h4>
+              <h5>Maharashtra State Board</h5>
+                <p><b>St. Andrew's High School</b> In which I was trained equally in education as well as in sports. </p>
             </div>
         </div>
     </div>
   </section>
   <!--Education & diploma end -->
   
-  
-  <!--portfolio start-->
-  <section class="protfolio" id="ourwork">
-    <div class="container">
-        <div class="heading">
-            <h2>Portfolio</h2>
-            <h3>What I have done in my academic career</h3>            
-        </div>
-    </div>
-    <div class="row">
-      <div class="portfolioFilter">
-        <ul>
-          <li><a href="#" data-filter="*" class="current">All</a></li>
-          <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
-          <li><a href="#" data-filter=".template">template</a></li>
-          <li><a href="#" data-filter=".illustration">Illustration</a></li>
-          <li class="last"><a href="#" data-filter=".webdesign">Web Design</a></li>
-        </ul>
-      </div>
-      <ul class="portfolioContainer row">
-      <li class="template col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/1.jpg" title="Project Title2" class="zoom lb lb_warsaw1"><i class="fa fa-plus fa-2x"></i></a> </span> </span> <img src="images/projects/thumb-images/thumb1.jpg" alt="" > </div>
-        </li>
-        <li class="template wordpress illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/2.jpg" title="Project Title2" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb2.jpg" alt="" > </div>
-        </li>
-        <li class="wordpress illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/3.jpg" title="Project Title3" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb3.jpg" alt="" > </div>
-        </li>
-        <li class="webdesign wordpress col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/4.jpg" title="Project Title4" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb4.jpg" alt="" > </div>
-        </li>
-        <li class="wordpress template col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/5.jpg" title="Project Title5" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb5.jpg" alt="" > </div>
-        </li>
-        <li class="template webdesign illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/6.jpg" title="Project Title6" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb6.jpg" alt="" > </div>
-        </li>
-        <li class="wordpress template col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/7.jpg" title="Project Title7" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb7.jpg" alt="" > </div>
-        </li>
-        <li class="template webdesign illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/8.jpg" title="Project Title8" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb8.jpg" alt="" > </div>
-        </li>
-        <li class="template col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/9.jpg" title="Project Title1" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb9.jpg" alt=""  > </div>
-        </li>
-        <li class="template wordpress col-xs-6 col-sm-3 col-md-4 col-lg-4">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/10.jpg" title="Project Title2" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb10.jpg" alt="" > </div>
-        </li>
-        <li class="wordpress col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/11.jpg" title="Project Title3" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb11.jpg" alt="" > </div>
-        </li>
-        <li class="template wordpress col-xs-6 col-sm-4 col-md-3 col-lg-3">
-          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/projects/big-images/12.jpg" title="Project Title4" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a>  </span> </span> <img src="images/projects/thumb-images/thumb12.jpg" alt="" > </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!--portfolio end-->   
-  
   <!--contact start-->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="heading">
+      <div class="heading" style="padding-bottom: 10px;">
         <h2>Get In Touch</h2>
-        <h3>Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi</h3>       
-      </div>
-    </div>
-    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+        <div class="row center-xs">
 
-    <!--google map start-->
-    <!-- <div class="row mapArea">
-     <div id="map" style="width: 100%; height: 100%"></div> 
-    </div> --> 
-    <!--google map end--> 
-  </section>
-  <section class="contactDetails">
-    <div class="container"> 
-    <div class="heading">
+            <div class="col-sm-4">
+              <i class="fa fa-envelope fa-4x"></i>
+              <p style="padding: 10px; font-size: 15px;">
+                <b>durgeshi.t199@gmail.com</b>
+              </p>
+            </div>
+
+            <div class="col-sm-4">
+              <i class="fa fa-map-marker fa-4x"></i>
+              <address style="padding: 10px; font-size: 15px;">
+                <strong>Bandra, Mumbai,</strong>
+                Maharashtra, India<br>
+              </address>
+            </div>
+
+            <div class="col-sm-4">
+              <i class="fa fa-mobile fa-4x"></i>
+              <div class="contact-number" style="padding: 10px; font-size: 15px;">
+                (+91) 9768962805
+              </div>
+            </div>
+          </div>
         <h2>Drop a email</h2>
         <h3>Please feel free if you would like to have a chat.</h3>       
       </div>
       <!--contact form start-->
       <div class="row media">        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conForm text-center">
-        <div id="message"></div>
-        <!-- <form method="post" action="php/contact.php" name="cform" id="cform">
-          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" placeholder="Your name" >
-          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 noMarr" placeholder="Your email" >
-          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-8 col-lg-8" placeholder="Your message"></textarea>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input type="submit" id="submit" name="send" class="submitBnt" value="Send message"></div>
-          <div id="simple-msg"></div>
-        </form> -->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><a id="submit" name="send" class="btn submitBnt" href="mailto:durgeshi.t199@gmail.com" target="_blank" style="padding-top: 12px">Send message</a></div>
       </div>
       </div>
@@ -383,11 +398,11 @@ lum sapien sed matti sapien sed mattis.</p>
   <section class="footer" id="footer">
     <div class="container">
       <ul>
-        <li><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+        <li><a href="https://github.com/yadav-durgesh"><i class="fa fa-github fa-2x"></i></a></li>
+        <li><a href="https://www.facebook.com/er.yadav.durgesh"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/durgesh-yadav"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://www.instagram.com/dee_durgesh/"><i class="fa fa-instagram fa-2x"></i></a></li>
+        <li><a href="https://stackoverflow.com/users/6289260/dee"><i class="fa fa-stack-overflow fa-2x"></i></a></li>
       </ul>
     </div>
     <p class="text-center"><a href="#wrapper" class="gototop"><i class="fa fa-chevron-up fa-2"></i></a></p>
@@ -443,8 +458,7 @@ $(document).ready( function() {
       2: 'skillset',
       3: 'experience',
       4: 'education',
-      5: 'ourwork',
-      6: 'contact'
+      5: 'contact'
     },
     itemClass: 'menuItem',
     itemHover: 'active',
@@ -471,11 +485,22 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     animation: 'fade',
     play: 5000
   });
+  $(document).ready(function(){
+    $('.progressWrapper progress').each(function(){
+      var prgsVal = $(this).data('value');
+      var maxN = $(this).attr('max');
+      var pop = prgsVal/maxN * 100
+      
+      $(this).prev().css('left', pop + '%').text(prgsVal);
+      $(this).val(prgsVal);
+    });
+});
 </script>  
 
 <!--for portfolio jquery--> 
 <script src="js/jquery.isotope.js" type="text/javascript"></script> 
 <link type="text/css" rel="stylesheet" id="theme" href="css/jquery-ui-1.8.16.custom.css">
+<link type="text/css" rel="stylesheet" id="theme" href="css/progress.css">
 <link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
 <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script> 
 <script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script> 
