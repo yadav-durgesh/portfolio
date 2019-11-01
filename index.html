@@ -17,7 +17,7 @@
 
 <link rel="icon" type="image/png" sizes="100x100" href="images/logo1.png">
 <!--main style-->
-<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"> -->
 <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
 <!--google font style-->
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
@@ -26,6 +26,10 @@
 <!--font-family: 'Open Sans', sans-serif;-->
 <!-- font icon css style-->
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<!--======= Helping Plug-in StyleSheets =========-->
+<link href="css/bootstrap.3.3.6.min.css" rel="stylesheet" media="all">
+<!--======= Responsive Bootstrap Carousel StyleSheet =========-->
+<link href="css/responsive_bootstrap_carousel_mega_min.css" rel="stylesheet" media="all">
 </head>
 <style type="text/css">
   .image-anim:hover {
@@ -42,6 +46,18 @@
     0% { transform: translate(1px, 1px) rotate(1deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+  #adv_portfolio_3_columns_carousel > .patternOverlay {
+    background: #372d38;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* height: 100%; */
+    z-index: 9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    opacity: 0.2;
+}
 </style>
 <body onLoad="load()" onUnload="GUnload()">
 <!-- Preloader -->
@@ -74,6 +90,7 @@
                         <li class="menuItem"><a href="#skillset">Skills</a></li>
                         <li class="menuItem"><a href="#experience">Experience</a></li>
                         <li class="menuItem"><a href="#education">Education</a></li>
+                        <li class="menuItem"><a href="#project">Projects</a></li>
                         <li class="menuItem"><a href="#contact">Contact</a></li>
                         <li class=""><a href="https://blog.yadavdurgesh.com/">Blog</a></li>
                       </ul>
@@ -350,9 +367,115 @@
     </div>
   </section>
   <!--Education & diploma end -->
+
+  <!--Project start-->
+  <section class="project" id="project" style="padding-top: 50px;">
+        <div class="containers">
+          <div class="heading">
+          <h2>Projects</h2>       
+        </div>
+       <!--*-*-*-*-*-*-*-*-*-*- BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
+
+		<div id="adv_portfolio_3_columns_carousel" class="carousel slide three_shows_one_move portfolio_col_carousel_wrapper" data-ride="carousel" data-interval="2000" data-pause="hover">
+
+        <!--========= Wrapper for slides =========-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--========= 1st slide =========-->
+          <div class="item active">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
+              <img src="images/projects/rawnature.jpg" alt="slider 01" />
+              <div class="portfolio_col_item_caption">
+                <h2>RAWNATURE <small style="font-size: 12px; float:right">Shopping</small></h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo.</p>
+                <a href="#">read more</a>
+              </div>
+            </div>
+          </div>
+  
+          <!--========= 2nd slide =========-->
+          <div class="item">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
+              <img src="images/projects/petmate.jpg" alt="slider 02" />
+              <div class="portfolio_col_item_caption">
+                <h2>PETMATE <small style="font-size: 12px; float:right">Lifestyle</small></h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo.</p>
+                <a href="#">read more</a>
+              </div>
+            </div>
+          </div>
+          
+          <!--========= 3rd slide =========-->
+          <div class="item">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
+              <img src="images/projects/financegym.jpg" alt="slider 03" />
+              <div class="portfolio_col_item_caption">
+                <h2>financegym <small style="font-size: 12px; float:right">Finance</small></h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo.</p>
+                <a href="#">read more</a>
+              </div>
+            </div>
+          </div>
+  
+          <!--========= 4th slide =========-->
+          <div class="item">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
+              <img src="images/projects/bhatiahospital.jpg" alt="slider 04" />
+              <div class="portfolio_col_item_caption">
+                <h2>bhatia hospital <small style="font-size: 12px; float:right">Health & Fitness</small></h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo.</p>
+                <a href="#">read more</a>
+              </div>
+            </div>
+          </div>
+          
+          <!--========= 5th slide =========-->
+          <div class="item">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
+              <img src="images/projects/psychonline.png" alt="slider 05"  height="341"/>
+              <div class="portfolio_col_item_caption">
+                <h2>psychonline <small style="font-size: 12px; float:right">Medical</small> </h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo.</p>
+                <a href="#">read more</a>
+              </div>
+            </div>
+          </div>
+          
+          <!--========= 6th slide =========-->
+          <div class="item">
+            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
+              <img src="images/projects/gse.jpg" alt="slider 06" height="341"/>
+              <div class="portfolio_col_item_caption">
+                <h2>Gse renewable <small style="font-size: 12px; float:right">Productivity</small> </h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo.</p>
+                <a href="#">read more</a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!--======= Navigation Buttons =========-->
+  
+        <!--======= Left Button =========-->
+        <!-- <a class="left carousel-control portfolio_col_carousel_control_left adv_left" href="#adv_portfolio_3_columns_carousel" role="button" data-slide="prev">
+          <span class="fa fa-angle-left portfolio_col_carousel_control_icons" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a> -->
+  
+        <!--======= Right Button =========-->
+        <!-- <a class="right carousel-control portfolio_col_carousel_control_right adv_right" href="#adv_portfolio_3_columns_carousel" role="button" data-slide="next">
+          <span class="fa fa-angle-right portfolio_col_carousel_control_icons" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+  
+      </div> <!--*-*-*-*-*-*-*-*-*-*- END BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
+    </div>
+  </section>  
+  <!--Project end--> 
   
   <!--contact start-->
-  <section class="contact" id="contact">
+  <section class="contact" id="contact" style="padding-bottom: 30px;">
     <div class="container">
       <div class="heading" style="padding-bottom: 10px;">
         <h2>Get In Touch</h2>
@@ -458,7 +581,8 @@ $(document).ready( function() {
       2: 'skillset',
       3: 'experience',
       4: 'education',
-      5: 'contact'
+      5: 'project',
+      6: 'contact'
     },
     itemClass: 'menuItem',
     itemHover: 'active',
@@ -501,9 +625,9 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 <script src="js/jquery.isotope.js" type="text/javascript"></script> 
 <link type="text/css" rel="stylesheet" id="theme" href="css/jquery-ui-1.8.16.custom.css">
 <link type="text/css" rel="stylesheet" id="theme" href="css/progress.css">
-<link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
+<!-- <link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
 <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script> 
-<script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script>  -->
 
 <!--contact form js--> 
 <script type="text/javascript" src="js/jquery.contact.js"></script> 
@@ -553,6 +677,10 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
 <!--for theme custom jquery--> 
 <script src="js/custom.js"></script>
+<!--======= Touch Swipe =========-->
+<script src="js/jquery.touchSwipe.min.js"></script>
+<!--======= Customize =========-->
+<script src="js/responsive_bootstrap_carousel.js"></script>
 <script type="text/javascript">
   function load() {
 
