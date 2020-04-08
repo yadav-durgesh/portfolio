@@ -1,753 +1,809 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jackson Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!-- Metas Page details-->
-<title>Durgesh Yadav</title>
-<meta name="description" content="Software developer FULL MERN MEAN stack developer">
-<meta name="author" content="durgesh">
-<!-- Mobile Specific Metas-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-<link rel="icon" type="image/png" sizes="100x100" href="images/logo1.png">
-<!--main style-->
-<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"> -->
-<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-<!--google font style-->
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-<!--font-family: 'Metrophobic', serif;-->
-<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic' rel='stylesheet' type='text/css'> 
-<!--font-family: 'Open Sans', sans-serif;-->
-<!-- font icon css style-->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<!--======= Helping Plug-in StyleSheets =========-->
-<link href="css/bootstrap.3.3.6.min.css" rel="stylesheet" media="all">
-<!--======= Responsive Bootstrap Carousel StyleSheet =========-->
-<link href="css/responsive_bootstrap_carousel_mega_min.css" rel="stylesheet" media="all">
-</head>
-<style type="text/css">
-  .image-anim:hover {
-    animation: shake 0.99s;
-    animation-iteration-count: infinite;
-  }
-  .work-media:hover {
-    background: linear-gradient(#f1efef,#ffffff);
-  }
-  .degree-media:hover{
-    background: linear-gradient(#eae7e7,#f8f8f8);
-  }
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(1deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-  .project-heading h2:after {
-    content: "";
-    display: block;
-    width: 76px;
-    height: 2px;
-    background: #5b4c5c;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -38px;
-  }
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
 
-  .project-heading {
-    text-align: center;
-    padding-bottom: 10px
-  }
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-.project-heading h2 {
-    font-size: 19px;
-    line-height: 40px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    display: inline-block;
-    position: relative;
-}
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Jackson Ford</a></h1>
+				<span class="position"><a href="#">UI/UX/Designer</a> in Philippines</span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#" data-nav-section="services">Services</a></li>
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>
+						<li><a href="#" data-nav-section="experience">Experience</a></li>
+						<li><a href="#" data-nav-section="work">Work</a></li>
+						<li><a href="#" data-nav-section="blog">Blog</a></li>
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
 
-  .portfolio_col_carousel_wrapper {
-    background: #f8f8f8;
-  }
+			<div class="colorlib-footer">
+				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></span></small></p>
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="#"><i class="icon-twitter2"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+				</ul>
+			</div>
 
-  .portfolio_col_item_caption {
-    color: gray;
-  }
+		</aside>
 
-  .portfolio_col_carousel_wrapper {
-    padding: 0px;
-  }
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1>Hi! <br>I'm Jackson</h1>
+						   					<h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
+												<p><a class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/img_bg_2.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>I am <br>a Designer</h1>
+												<h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2>
+												<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
 
-  .portfolio_col_item_caption > H2 {
-    color: #000000;
-  }
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Us</span>
+										<h2 class="colorlib-heading">Who Am I?</h2>
+										<p><strong>Hi I'm Jackson Ford</strong> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="icon-bulb"></i></span>
+										<h3>Graphic Design</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3>Web Design</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3>Software</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-phone3"></i></span>
+										<h3>Application</h3>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
+										<a href="#" class="btn-hire">Hire me</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-  #adv_portfolio_3_columns_carousel > .patternOverlay {
-    background: #ffffff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    /* height: 100%; */
-    z-index: 0 !important;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: alpha(opacity=80);
-    opacity: 0.2;
-}
-</style>
-<body onLoad="load()" onUnload="GUnload()">
-<!-- Preloader -->
-<div id="preloader">
-  <div id="status"></div>
-</div>
-<!--wrapper start-->
-<div class="wrapper noGap" id="wrapper">
 
-<!--Header start -->
-<header>
-    <!--menu start-->
-    <div class="menu">
-    <a href="#" class="nav-icon" id="nav-show"><i class="fa fa-bars"></i></a>
-      <div class="navbar-wrapper">
-        <div class="container">
-          <div class="navwrapper">
-            <div class="navbar navbar-inverse navbar-static-top">
-              <div class="container">
-                <div class="logo"><img src="images/logo1.png" style="max-width:80%;" /></div> 
-                <div class="navArea"><a href="#" class="closeMenu"><i class="fa fa-times"></i></a>
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                     <!-- <a class="navbar-brand" href="#">Menu</a>  --></div>
-                    <div class="navbar-collapse collapse">
-                     <!--  <img src="images/logo1.png" style="height: 100px"> -->
-                      <ul class="nav navbar-nav">
-                        <li class="menuItem active"><a href="#wrapper">Home</a></li>
-                        <li class="menuItem"><a href="#aboutus">About Me</a></li>
-                        <li class="menuItem"><a href="#skillset">Skills</a></li>
-                        <li class="menuItem"><a href="#experience">Experience</a></li>
-                        <li class="menuItem"><a href="#education">Education</a></li>
-                        <li class="menuItem"><a href="#project">Projects</a></li>
-                        <li class="menuItem"><a href="#contact">Contact</a></li>
-                        <li class=""><a href="https://blog.yadavdurgesh.com/">Blog</a></li>
-                      </ul>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Navbar -->
-        </div>
-      </div>
-    </div>
-    <!--menu end--> 
-    <!--banner start-->
-    <div class="banner row" id="banner">
-    
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd slides-container" style="height:100%"> 
-        <!--background slide show start-->
-        <div class="slide"> 
-          <img src="images/header-image/image01.png" alt="image01"> </div>
-        <div class="slide"> 
-          <img src="images/header-image/image03.png" alt="image01"> </div>
-        <!--background slide show end--> 
-      </div>
-      <div class="bannerText">
-          <h1>Durgesh Yadav</h1>
-          <h3 id="app"></h3>
-        </div>
-    </div>
-    <!--banner end--> 
-    
-  </header>
-  <!--Header end -->
-  
- <!--about us start-->
-  <section class="aboutus" id="aboutus">
-    <div class="container">
-      <div class="row">
-       <div class="col-md-12">
-        <div class="heading">
-        <h2>About me</h2>
-        <h3>A small introduction about my self</h3>        
-      </div>
-      </div> 
-       </div> 
-      <div class="row">
-      <div class=" col-lg-3 col-md-3 col-sm-3 col-xs-12 pull-right media"><img class="image-anim" src="images/logo1.png" alt=""></div>
-        <div class=" col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left media">
-          <h4>Er. Durgesh Yadav</h4>
-            <p><em>Software Developer<em> with 4+ years of experience with focus on backend and frontend development seeking a full time role in <em>Mumbai<em>. Proven hands-on experience designing and implementing scalable solutions using wide range of technologies with a history of productivity and successful outcomes. </p>
-            <div class="row">
-              <h4 class="col-md-12">Download Resume</h4>
-              <div class="col-md-2">
-                <a role="button"  href="https://docs.google.com/document/u/2/export?format=pdf&id=1XT_xYk34o_4rHIRbgx6i9aTLW8jfz_Gv&token=AC4w5VhhakOxulVy2ptYM4sDLvgke3TP6A%3A1575812808237&ouid=105011608726857269576&includes_info_params=true" class="btn btn-primary btn-sm" title="Download Resume PDF" style="width: 100%;">PDF</a>
-              </div>
-              <div class="col-md-2">
-                <a role="button" href="https://docs.google.com/document/u/2/export?format=docx&id=1XT_xYk34o_4rHIRbgx6i9aTLW8jfz_Gv&token=AC4w5VhhakOxulVy2ptYM4sDLvgke3TP6A%3A1575812808237&ouid=105011608726857269576&includes_info_params=true" class="btn btn-primary btn-sm" title="Download Resume Document" style="width: 100%;">Doc File</a>
-              </div>
-              <div class="col-md-2">
-                <a role="button" class="btn btn-primary btn-sm"  href="https://docs.google.com/document/u/2/export?format=txt&id=1XT_xYk34o_4rHIRbgx6i9aTLW8jfz_Gv&token=AC4w5VhhakOxulVy2ptYM4sDLvgke3TP6A%3A1575812808237&ouid=105011608726857269576&includes_info_params=true" title="Download Resume Text" style="width: 100%;">Text File</a></div>
-              </div>
-  
-  
-  
-        </div>
-        
-      </div>     
-    </div>    
-  </section>
-  <!--about us end--> 
-  <!--Skillset start -->
-  <section id="skillset" class="skillset">
-    <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-               <div class="heading">
-                <h2>Skills &amp; Expertice</h2>
-                <h3>I can say i’m quite good at</h3>        
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="col-md-6 col-sm-12 media">
-                  <p style="line-height: 20px;">As a result oriented IT Professional in development and implementation of web application using <i>PHP, Python, HTML, CSS, JAVASCRIPT and MYSQL </i> technology, and also having good work experience in the following technologies
-                    <ul>
-                      <li style="padding-bottom: 5px;">Expertise in implementing web technologies using FrameWork <i>Opencart, Laravel, Codeigniter, AngularJs, React, Django</i> to develop Enterprise software applications.</li>
-                      <li style="padding-bottom: 5px;">Good knowledge in <i>MYSQL, MS-SQL, Postgre</i></li>
-                      <li style="padding-bottom: 5px;">Expertise in Development, Modification and Implementation Mobile App with <i>Angularjs</i> (PWA), <i>React-Native</i></li>
-                      <li style="padding-bottom: 5px;">Hosting <i> AWS, Digital Ocean, Ngnix</i></li>
-                      <li style="padding-bottom: 5px;">Others <i> Scraping, Elastic Search, OAuth, Maat website Excel, OpenTalk, Dosespot, BlueDart, GIT, Gooday, JIRA, Slack, Postman and more.</i> </li>
-                    </ul>
-                </div>
-              <div class="col-md-6 col-sm-12" style="padding-top: 25px">
-                
-                <div class="skillbar clearfix " data-percent="65%">
-                    <div class="skillbar-title"><span>HTML/CSS</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent"></div>
-                </div> <!-- End Skill Bar -->
-                
-                <div class="skillbar clearfix " data-percent="70%">
-                    <div class="skillbar-title"><span>php</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent"></div>
-                </div> <!-- End Skill Bar -->    
+			
+			<section class="colorlib-services" data-section="services">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">What I do?</span>
+							<h2 class="colorlib-heading">Here are some of my expertise</h2>
+						</div>
+					</div>
+					<div class="row row-pt-md">
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-1">
+								<span class="icon">
+									<i class="icon-bulb"></i>
+								</span>
+								<div class="desc">
+									<h3>Innovative Ideas</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-2">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>Software</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>Application</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-4">
+								<span class="icon">
+									<i class="icon-layers2"></i>
+								</span>
+								<div class="desc">
+									<h3>Graphic Design</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-5">
+								<span class="icon">
+									<i class="icon-data"></i>
+								</span>
+								<div class="desc">
+									<h3>Software</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-6">
+								<span class="icon">
+									<i class="icon-phone3"></i>
+								</span>
+								<div class="desc">
+									<h3>Application</h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Cups of coffee</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Clients</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Partners</span>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                <div class="skillbar clearfix " data-percent="50%">
-                    <div class="skillbar-title"><span>Python</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent"></div>
-                </div> <!-- End Skill Bar -->  
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Photoshop</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    <span>75%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>jQuery</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
+								    <span>60%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>HTML5</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								    <span>85%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>CSS3</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>WordPress</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    <span>70%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>SEO</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                <div class="skillbar clearfix " data-percent="65%">
-                    <div class="skillbar-title"><span>Javascript</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent"></div>
-                </div> <!-- End Skill Bar -->  
-                <div class="skillbar clearfix " data-percent="65%">
-                    <div class="skillbar-title"><span>SQL</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent"></div>
-                </div> <!-- End Skill Bar -->           
-                </div>
-                <div class="col-md-12">
-                   <div class="heading" style="padding-bottom: 0px">
-                    <h2>Other Skills</h2>
-                    <h3></h3>        
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <label class="col-md-12">Leadership</label>                 
-                  <div class="progress-circle over50 p70">
-                     <span>70%</span>
-                     <div class="left-half-clipper">
-                        <div class="first50-bar"></div>
-                        <div class="value-bar"></div>
-                     </div>
-                  </div>
-                </div>
-                <div class="col-md-2"> 
-                  <label class="col-md-12">Creativity</label>                  
-                  <div class="progress-circle over50 p65">
-                     <span>65%</span>
-                     <div class="left-half-clipper">
-                        <div class="first50-bar"></div>
-                        <div class="value-bar"></div>
-                     </div>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <label class="col-md-12">Management</label>               
-                  <div class="progress-circle over50 p65">
-                     <span>65%</span>
-                     <div class="left-half-clipper">
-                        <div class="first50-bar"></div>
-                        <div class="value-bar"></div>
-                     </div>
-                  </div> 
-                </div>
-                <div class="col-md-2">
-                  <label class="col-md-12">Troubleshooting</label>             
-                  <div class="progress-circle over50 p75">
-                     <span>75%</span>
-                     <div class="left-half-clipper">
-                        <div class="first50-bar"></div>
-                        <div class="value-bar"></div>
-                     </div>
-                  </div> 
-                </div>
-                <div class="col-md-2">    
-                  <label class="col-md-12">Learning</label>              
-                  <div class="progress-circle over50 p80">
-                     <span>80%</span>
-                     <div class="left-half-clipper">
-                        <div class="first50-bar"></div>
-                        <div class="value-bar"></div>
-                     </div>
-                  </div> 
-                </div>
-                <div class="col-md-2">
-                  <label class="col-md-12">Motivation</label>       
-                  <div class="progress-circle over50 p100">
-                     <span>100%</span>
-                     <div class="left-half-clipper">
-                        <div class="first50-bar"></div>
-                        <div class="value-bar"></div>
-                     </div>
-                  </div>                  
-                </div>
-                </div>
-        </div>
-    </div>
-  </section>
-  <!--Skillset end -->
-  <!--Work Experties start -->
-  <section id="experience" class="myexperties">
-    <div class="container">
-        <div class="heading">
-        <h2>Work Experience</h2>
-        <h3>My previous associations</h3>        
-      </div>
-        
-        <div class="row media work-media">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-              <div class="expertiesico">
-                  Mar,2017<br>Till Date
-                </div>
-            </div>
-          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-              <h4>Aavidcode & Tacto</h4>
-                <h5>Software Developer</h5>
-                <p><b>Aavidcode:</b> Here I had an opportunity to work along with some skilled developers and learn a lot from them about team work and software development process and also got opportunity to become Project Lead. In Nov 2017 got merged with Tacto</p>
-                <p><b>Tacto:</b> Here I had an opportunity to work on different latest technology and also enhance my Troubleshooting and Management quality.</p>
-            </div>
-        </div>
-        <div class="row media work-media">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-              <div class="expertiesico">
-                  Dec,2015<br>Dec 2016
-                </div>
-            </div>
-          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-              <h4>G4K Solutions</h4>
-                <h5>Software Developer</h5>
-                <p>The starting point of my programming career. It included, Software as a Service(SaaS) based model built on OpenCart framework and also other minor projects involved in core PHP and basic HTML5, CSS3 and JS/JQuery, Mysql.</p>
-            </div>
-        </div>
-    </div>
-  </section>
-  <!--Work Experties end -->
-  <!--Education & diploma start -->
-  <section id="education" class="educationdiploma">
-    <div class="container">
-        <div class="heading">
-        <h2>Education  </h2>
-        <h3>Degrees &amp; Certification </h3>        
-      </div>
-        
-        <div class="row media degree-media">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-              <div class="expertiesico">
-                  2015 <br> (Mira Road, Thane)
-                </div>
-            </div>
-          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-              <h4>Bachelor of Engineering in Information Technology </h4>
-                <h5>Mumbai University</h5>
-                <b>Shree L.R. Tiwari College of Engineering</b> In which my skill were more sharpend.
-            </div>
-        </div>
-        <div class="row media degree-media">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-              <div class="expertiesico">
-                  2011 <br> (Bandra, Mumbai)
-                </div>
-            </div>
-          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-              <h4>HIGHER SECONDARY CERTIFICATE</h4>
-                <h5>Maharashtra State Board</h5>
-                <p><b>Fr. Agnel Junior College</b> In addition to academic, I had an exposure to education, sports and cultural activities which help me to build overall personality. </p>
-            </div>
-        </div>
-        <div class="row media degree-media">
-          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-              <div class="expertiesico">
-                  2009 <br> (Bandra, Mumbai)
-                </div>
-            </div>
-          <div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
-              <h4>Secondary School Certificate </h4>
-              <h5>Maharashtra State Board</h5>
-                <p><b>St. Andrew's High School</b> In which I was trained equally in education as well as in sports. </p>
-            </div>
-        </div>
-    </div>
-  </section>
-  <!--Education & diploma end -->
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Education</span>
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Master Degree Graphic Design
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-6">
+										      			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+										      		</div>
+										      	</div>
+									         </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of Computer Science
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+													<ul>
+														<li>Separated they live in Bookmarksgrove right</li>
+														<li>Separated they live in Bookmarksgrove right</li>
+													</ul>
+									        </div>
+									    </div>
+									</div>
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingThree">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Diploma in Information Technology
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
+									        </div>
+									    </div>
+									</div>
 
-  <!--Project start-->
-  <section class="project" id="project" style="padding-top: 50px;">
-        <div class="containers">
-          <div class="project-heading">
-          <h2 >Projects</h2>       
-        </div>
-       <!--*-*-*-*-*-*-*-*-*-*- BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFour">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Diploma in Information Technology
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
+									        </div>
+									    </div>
+									</div>
 
-		<div id="adv_portfolio_3_columns_carousel" class="carousel slide three_shows_one_move portfolio_col_carousel_wrapper" data-ride="carousel" data-interval="2000" data-pause="hover">
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFive">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+									        <div class="panel-body">
+									            <p>Far far away, behind the word <strong>mountains</strong>, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>	
+									        </div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <!--========= Wrapper for slides =========-->
-        <div class="carousel-inner" role="listbox">
-  
-          <!--========= 1st slide =========-->
-          <div class="item active">
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
-              <img src="images/projects/rawnature.jpg" alt="slider 01" />
-              <div class="portfolio_col_item_caption">
-                <h2>RAWNATURE <small style="font-size: 12px; float:right">Shopping</small></h2>
-                <p>RawNature is a line of high-performing grooming essentials that harnesses nature’s finest ingredients. All our ingredients are either 100% natural, naturally derived, vegan or certified safe-to-use by EcoCert.</p>
-                <a href="https://www.rawnaturecompany.com/" target="_blank">Vist Site</a>
-              </div>
-            </div>
-          </div>
-  
-          <!--========= 2nd slide =========-->
-          <div class="item">
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
-              <img src="images/projects/petmate.jpg" alt="slider 02" />
-              <div class="portfolio_col_item_caption">
-                <h2>PETMATE <small style="font-size: 12px; float:right">Lifestyle</small></h2>
-                <p>All pet parents know that each pooch has their own unique personality traits that makes them uniquely lovable. At PetMate, we are a family of pet-parents committed to creating an intuitive digital experience that puts our pets' wishes first.Our app helps satisfy each individual pet’s need for companionship and a safe homes - based on their distinct personality and preferences.</p>
-                <a href="http://petmate.in/" target="_blank">Vist Site</a>
-              </div>
-            </div>
-          </div>
-          
-          <!--========= 3rd slide =========-->
-          <div class="item">
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
-              <img src="images/projects/financegym.jpg" alt="slider 03" />
-              <div class="portfolio_col_item_caption">
-                <h2>financegym <small style="font-size: 12px; float:right">Finance</small></h2>
-                <p>Finance GYM is a fun workout that helps you Grow Your Money. We use a gamified approach to teach personal finance. You will learn about investing and money management with the help of online tutorials and games.</p>
-                <a href="https://www.financegym.in/" target="_blank">Vist Site</a>
-              </div>
-            </div>
-          </div>
-  
-          <!--========= 4th slide =========-->
-          <div class="item">
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
-              <img src="images/projects/bhatiahospital.jpg" alt="slider 04" />
-              <div class="portfolio_col_item_caption">
-                <h2>bhatia hospital <small style="font-size: 12px; float:right">Health & Fitness</small></h2>
-                <p>Bhatia Hospital is one of the most reputed multispeciality hospitals in the southern part of Mumbai. It was built in 1932 as a gynaecology hospital in Mumbai by a charitable trust formed by three Bhatia families. The reaon this hospital was founded was to provide high quality services to their patients with ultra-modern technologies</p>
-                <a href="https://www.bhatiahospital.org/" target="_blank">Vist Site</a>
-              </div>
-            </div>
-          </div>
-          
-          <!--========= 5th slide =========-->
-          <div class="item">
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
-              <img src="images/projects/psychonline.png" alt="slider 05"  height="341"/>
-              <div class="portfolio_col_item_caption">
-                <h2>psychonline <small style="font-size: 12px; float:right">Medical</small> </h2>
-                <p>PsychOnline is an innovative telehealth platform that increases Practitioner Productivity and Improves Patient Engagement. Our goal is to ensure a provider-friendly platform while helping increase access to affordable mental health services for patients everywhere.</p>
-                <a href="https://www.psychonline.com/" target="_blank">Vist Site</a>
-              </div>
-            </div>
-          </div>
-          
-          <!--========= 6th slide =========-->
-          <div class="item">
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
-              <img src="images/projects/gse.jpg" alt="slider 06" height="341"/>
-              <div class="portfolio_col_item_caption">
-                <h2>Gse renewable <small style="font-size: 12px; float:right">Productivity</small> </h2>
-                <p>GSE Renewables (GSER) is committed to facilitating investment in renewable energy that is clean and sustainable, to businesses. We work as a niche consultancy and investment bank advising clients with project selection, financing, due diligence and overall project management in the Renewable energy sector. GSER is focused on everything Renewable.</p>
-                <a href="http://gserenewables.com/" target="_blank">Vist Site</a>
-              </div>
-            </div>
-          </div>
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
 
-           <!--========= 7th slide =========-->
-           <div class="item">
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio_col_item_image">
-              <img src="images/projects/diamond-circle.png"  style="background-color: black;" alt="slider 06" height="341"/>
-              <div class="portfolio_col_item_caption">
-                <h2>Diamond Circle <small style="font-size: 12px; float:right">Blogging</small> </h2>
-                <p>India is one of the earliest known sources of diamonds. Indian Diamond Industry is a pioneer in the gem industry and a world leader in the manufacturing of cut and refined diamonds. Diamonds today nine out of every ten come from India which is used in jewellery worldwide. Indian Diamond Industry is mainly involved with cutting, polishing and exporting diamonds.</p>
-                <a href="https://www.diamondcircle.com/" target="_blank">Vist Site</a>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-  
-        <!--======= Navigation Buttons =========-->
-  
-        <!--======= Left Button =========-->
-        <!-- <a class="left carousel-control portfolio_col_carousel_control_left adv_left" href="#adv_portfolio_3_columns_carousel" role="button" data-slide="prev">
-          <span class="fa fa-angle-left portfolio_col_carousel_control_icons" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a> -->
-  
-        <!--======= Right Button =========-->
-        <!-- <a class="right carousel-control portfolio_col_carousel_control_right adv_right" href="#adv_portfolio_3_columns_carousel" role="button" data-slide="next">
-          <span class="fa fa-angle-right portfolio_col_carousel_control_icons" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a> -->
-  
-      </div> <!--*-*-*-*-*-*-*-*-*-*- END BOOTSTRAP CAROUSEL *-*-*-*-*-*-*-*-*-*-->
-    </div>
-  </section>  
-  <!--Project end--> 
-  
-  <!--contact start-->
-  <section class="contact" id="contact" style="padding-bottom: 30px;">
-    <div class="container">
-      <div class="heading" style="padding-bottom: 10px;">
-        <h2>Get In Touch</h2>
-        <div class="row center-xs">
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
 
-            <div class="col-sm-4">
-              <i class="fa fa-envelope fa-4x"></i>
-              <p style="padding: 10px; font-size: 15px;">
-                <b>durgeshi.t199@gmail.com</b>
-              </p>
-            </div>
+					               <div class="timeline-label">
+					                  <h2><a href="#">Full Stack Developer</a> <span>2017-2018</span></h2>
+					                  <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+					               </div>
+					            </div>
+					         </article>
 
-            <div class="col-sm-4">
-              <i class="fa fa-map-marker fa-4x"></i>
-              <address style="padding: 10px; font-size: 15px;">
-                <strong>Bandra, Mumbai,</strong>
-                Maharashtra, India<br>
-              </address>
-            </div>
 
-            <div class="col-sm-4">
-              <i class="fa fa-mobile fa-4x"></i>
-              <div class="contact-number" style="padding: 10px; font-size: 15px;">
-                (+91) 9768962805
-              </div>
-            </div>
-          </div>
-        <h2>Drop a email</h2>
-        <h3>Please feel free if you would like to have a chat.</h3>       
-      </div>
-      <!--contact form start-->
-      <div class="row media">        
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 conForm text-center">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><a id="submit" name="send" class="btn submitBnt" href="mailto:durgeshi.t199@gmail.com" target="_blank" style="padding-top: 12px">Send message</a></div>
-      </div>
-      </div>
-      <!--contact form end--> 
-    </div>
-  </section>  
-  <!--contact end--> 
-  
-  <!--footer start-->
-  <section class="footer" id="footer">
-    <div class="container">
-      <ul>
-        <li><a href="https://github.com/yadav-durgesh"><i class="fa fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.facebook.com/er.yadav.durgesh"><i class="fa fa-facebook fa-2x"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/durgesh-yadav"><i class="fa fa-linkedin fa-2x"></i></a></li>
-        <li><a href="https://www.instagram.com/dee_durgesh/"><i class="fa fa-instagram fa-2x"></i></a></li>
-        <li><a href="https://stackoverflow.com/users/6289260/yadav-durgesh"><i class="fa fa-stack-overflow fa-2x"></i></a></li>
-      </ul>
-    </div>
-    <p class="text-center"><a href="#wrapper" class="gototop"><i class="fa fa-chevron-up fa-2"></i></a></p>
-  </section>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document" style="top: 20%;">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <h5 class="modal-title" id="exampleModalLabel">Project Name</h5>
-            
-          </div>
-          <div class="modal-body">
-            <img id="project-image" style="width: 100%;" src="images/projects/thumb-images/thumb12.jpg">
-          </div>
-          <div class="modal-footer" style="text-align: left">
-            <p>Cras dictum tellus dui, vitae sollicitudin ipsum tincidunt adipiscing atgfnte varius at. Sed mollis vestibulum sapien sed mattis.Cras dictum tellus duvi, vitae sollicitud tyinstfg duvipsum tincidunt adipiscing ante varius at. Sed mollis ves tibulum Sed mollis vestibu lum sapien sed matti sapien sed mattis.
-            </p>
-            <div style="display: inline-block; padding: 15px;"><a href="#" style="color:#7d7d7d"><i class="fa fa-instagram fa-4x"></i></a></div>
-            <div style="display: inline-block; padding: 15px;"><a href="#" style="color:#7d7d7d"><i class="fa fa-instagram fa-4x"></i></a></div>
-            <div style="display: inline-block; padding: 15px;"><a href="#" style="color:#7d7d7d"><i class="fa fa-instagram fa-4x"></i></a></div>
-            <div style="display: inline-block; padding: 15px;"><a href="#" style="color:#7d7d7d"><i class="fa fa-instagram fa-4x"></i></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!--footer end-->     
-  </div>
-<!--wrapper end--> 
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Front End Developer at Google Company</a> <span>2017-2018</span></h2>
+					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               </div>
+					            </div>
+					         </article>
 
-<!--modernizr js--> 
-<script type="text/javascript" src="js/modernizr.custom.26633.js"></script> 
-<!--jquary min js--> 
-<script type="text/javascript" src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-3">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">System Analyst</a> <span>2017-2018</span></h2>
+					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               </div>
+					            </div>
+					         </article>
 
-<!--for placeholder jquery--> 
-<script type="text/javascript" src="js/jquery.placeholder.js"></script> 
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-4">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">Creative Designer</a> <span>2017-2018</span></h2>
+					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               </div>
+					            </div>
+					         </article>
 
-<!--for header jquery--> 
-<script type="text/javascript" src="js/stickUp.js"></script> 
-<script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-jQuery(function($) {
-$(document).ready( function() {
-  //enabling stickUp on the '.navbar-wrapper' class
-  $('.navbar-wrapper').stickUp({
-    parts: {
-      0: 'banner',
-      1: 'aboutus',
-      2: 'skillset',
-      3: 'experience',
-      4: 'education',
-      5: 'project',
-      6: 'contact'
-    },
-    itemClass: 'menuItem',
-    itemHover: 'active',
-    topMargin: 'auto'
-    });
-  });
-  
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-5">
+					                  <i class="icon-pen2"></i>
+					               </div>
+					               <div class="timeline-label">
+					               	<h2><a href="#">UI/UX Designer at Envato</a> <span>2017-2018</span></h2>
+					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               </div>
+					            </div>
+					         </article>
 
-});
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
 
-$('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('#project-image').attr('src', 'images/projects/thumb-images/thumb11.jpg')
-  modal.find('.modal-body input').val(recipient)
-})
-</script>
-<script>
-  $('#banner').superslides({
-    animation: 'fade',
-    play: 5000
-  });
-  $(document).ready(function(){
-    $('.progressWrapper progress').each(function(){
-      var prgsVal = $(this).data('value');
-      var maxN = $(this).attr('max');
-      var pop = prgsVal/maxN * 100
-      
-      $(this).prev().css('left', pop + '%').text(prgsVal);
-      $(this).val(prgsVal);
-    });
-});
-</script>  
+			<section class="colorlib-work" data-section="work">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Work</span>
+							<h2 class="colorlib-heading animate-box">Recent Work</h2>
+						</div>
+					</div>
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12">
+							<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Website</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-2.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 02</a></h3>
+										<span>Animation</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/img-3.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 03</a></h3>
+										<span>Illustration</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="project" style="background-image: url(images/img-4.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 04</a></h3>
+										<span>Application</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-5.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 05</a></h3>
+										<span>Graphic, Logo</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-6.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 06</a></h3>
+										<span>Web Design</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<!--for portfolio jquery--> 
-<script src="js/jquery.isotope.js" type="text/javascript"></script> 
-<link type="text/css" rel="stylesheet" id="theme" href="css/jquery-ui-1.8.16.custom.css">
-<link type="text/css" rel="stylesheet" id="theme" href="css/progress.css">
-<!-- <link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
-<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script> 
-<script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script>  -->
+			<section class="colorlib-blog" data-section="blog">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading">Recent Blog</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Renovating National Gallery</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Make website from scratch</a></h3>
+									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<!--contact form js--> 
-<script type="text/javascript" src="js/jquery.contact.js"></script> 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-<script type="text/javascript">
-            // When the window has finished loading create our google map below
-            /*google.maps.event.addDomListener(window, 'load', init);
-        
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 11,
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-globe-outline"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="#">info@domain.com</a></p>
+								</div>
+							</div>
 
-                    // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
-                   scrollwheel: false,
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
-                };
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>198 West 21th Street, Suite 721 New York NY 10016</p>
+								</div>
+							</div>
 
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="tel://">+123 456 7890</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-push-1">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+									<form action="">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Name">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Email">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Subject">
+										</div>
+										<div class="form-group">
+											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+										</div>
+									</form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                // Create the Google Map using our element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-        
-        
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
 
-                // Let's also add a marker while we're at it
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
-                    map: map,
-                    title: 'Hello!'
-                });
-            }*/
-        </script>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
 
-<script src="js/jquery.easing.js"></script> 
-<script src="js/jquery.mousewheel.js"></script> 
-<script src="js/jquery.flexslider-min.js"></script> 
-<script src="js/typing.js"></script> 
-<!-- <script defer src="js/slideroption.js"></script> --> 
-
-<!--for theme custom jquery--> 
-<script src="js/custom.js"></script>
-<!--======= Touch Swipe =========-->
-<script src="js/jquery.touchSwipe.min.js"></script>
-<!--======= Customize =========-->
-<script src="js/responsive_bootstrap_carousel.js"></script>
-<script type="text/javascript">
-  function load() {
-
-    $('.wrapper').removeClass('noGap');
-    $('.navbar-wrapper').animate({
-      opacity:1
-    },200);
-    $('.navbar-wrapper').removeClass('default-menu');
-    $('#nav-show').fadeOut();
-  }
-</script>
-
-</body>
+	</body>
 </html>
+
